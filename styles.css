@@ -5,7 +5,8 @@
 
 .header {
     background-color: rgba(255, 144, 14, .1);
-    min-height: 1322px;
+    height: 100%;
+    padding-bottom: 50px;
     width: 100%;
 }
 
@@ -20,6 +21,9 @@
     width: 75%;
     /* background-color: green; */
     position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
 nav {
@@ -95,7 +99,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 100px;
+    margin-top: 70px;
 }
 
 .header-sub-texts {
@@ -125,5 +129,11 @@ button {
 
 button:hover {
     background: #ac6617;
-    transform: scale(1.)
+}
+
+.header-image {
+    background: url("./images/banner.png") no-repeat;
+    background-size: 100% 100%;
+    height: 400px;
+    width: 100%;
 }
