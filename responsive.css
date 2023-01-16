@@ -1,4 +1,16 @@
 @media only screen and (max-width: 600px) {
+    nav {
+        display: block;
+    }
+    .nav-left {
+        text-align: center;
+    }
+    .nav-right>ul {
+        display: block;
+    }
+    .header-section {
+        margin-top: 0px;
+    }
     .facts {
         padding-top: 0;
         display: grid;
