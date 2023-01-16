@@ -216,6 +216,15 @@ button:hover {
     border-radius: 5px
 }
 
+.quick-list-texts .normal {
+    font-weight: normal;
+    color: var(--text-light)
+}
+
+.quick-list-texts .orange {
+    color: var(--primary);
+}
+
 
 /* feature section style  */
 
