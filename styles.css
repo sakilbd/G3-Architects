@@ -408,22 +408,20 @@ button:hover {
     flex-direction: column;
 }
 
-.logos::-webkit-scrollbar {
-    display: none;
-}
-
 .logos {
     display: flex;
     justify-content: space-between;
-    overflow: scroll;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
 }
 
 .logos>img {
     height: 30px;
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
+    transition: transform .4s ease;
+}
+
+.logos>img:hover {
+    transform: scale(1.3);
 }
 
 
@@ -442,4 +440,21 @@ button:hover {
 footer {
     padding-top: 130px;
     padding-bottom: 216px;
+}
+
+
+/* clients css */
+
+.clients {
+    display: flex;
+    justify-content: space-between;
+}
+
+.clients>img {
+    height: 50px;
+    transition: transform .4s ease;
+}
+
+.clients>img:hover {
+    transform: scale(1.3);
 }
