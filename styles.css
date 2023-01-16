@@ -1,3 +1,11 @@
+    :root {
+    --text-sm: 16px;
+    --text-md: 20px;
+    --text-title: 45px;
+    --text-light: #838080;
+    --line-height: 26px;
+}
+
 * {
     margin: 0;
     font-family: 'Work Sans';
@@ -99,6 +107,7 @@ nav {
 }
 
 .header-sub-texts {
+    color: var( --text-light);
     text-align: center;
     font-size: 16px;
     line-height: 26px;
@@ -188,13 +197,26 @@ button:hover {
 /* feature section style  */
 
 .feature-container {
+    /* background: green; */
     display: flex;
     justify-content: space-between;
+    padding-bottom: 4rem;
+    gap: 6rem;
 }
 
 .feature-section,
 .image-section {
-    flex: 1;
+    /* flex: 1; */
+}
+
+.feature-section {
+    width: 60%;
+}
+
+.feature-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .image-section {
@@ -202,6 +224,10 @@ button:hover {
     background-size: 100% 100%;
     height: 982px;
     width: 100%;
+    position: relative;
+    padding-left: -4rem;
+    padding-bottom: -4rem;
+    /* background: green; */
 }
 
 .feature-button {
@@ -218,9 +244,45 @@ button:hover {
     border: none;
     color: white;
     border-radius: 5px;
-    margin-bottom: 0px;
+    position: absolute;
+    bottom: -4rem;
+    left: -4rem;
 }
 
 .feature-button span {
     font-size: 65px;
 }
+
+.feature-title {
+    border-left: 5px solid #FF900E;
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.feature-title>span {
+    padding: 15px;
+}
+
+.feature-text {
+    font-size: var(--text-sm);
+    line-height: var(--line-height);
+    color: var(--text-light);
+}
+
+.feature-card {
+    border-radius: 5px;
+    background: white;
+    padding: 30px;
+    line-height: var(--line-height);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.feature-card>.card-title {
+    font-size: var(--text-md);
+    font-weight: bold;
+    line-height: 40px;
+}
+
+.description {
+    color: var(--text-light);
+    font-weight: var(--text-sm);
