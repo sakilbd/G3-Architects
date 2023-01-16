@@ -256,7 +256,7 @@ button:hover {
 
 .feature-title {
     border-left: 5px solid #FF900E;
-    font-size: var( --text-title);
+    font-size: var(--text-title);
     font-weight: bold;
 }
 
@@ -306,7 +306,7 @@ button:hover {
 }
 
 .facts-title {
-    font-size: var( --text-title);
+    font-size: var(--text-title);
     font-weight: bold;
 }
 
@@ -334,7 +334,7 @@ button:hover {
 }
 
 .section-header {
-    font-size: var( --text-title);
+    font-size: var(--text-title);
     font-weight: 800;
     line-height: 35.19px;
 }
@@ -344,4 +344,53 @@ button:hover {
     color: var(--text-light);
     font-weight: bold;
     line-height: 29.33px;
+}
+
+
+/* Sponsor section styles */
+
+.sponsor-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.title-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.title {
+    font-size: var(--text-title);
+    font-weight: bold;
+}
+
+.text {
+    font-size: var(--text-sm);
+    color: var(--text-light);
+    display: flex;
+    align-items: center;
+    line-height: 13px;
+    flex-direction: column;
+}
+
+.logos::-webkit-scrollbar {
+    display: none;
+}
+
+.logos {
+    display: flex;
+    justify-content: space-between;
+    overflow: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.logos>img {
+    height: 30px;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
 }
