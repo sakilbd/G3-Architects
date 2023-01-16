@@ -5,6 +5,7 @@
     --text-light: #838080;
     --line-height: 26px;
     --primary: #FF900E;
+    --background: rgba(255, 144, 14, .1);
 }
 
 * {
@@ -33,7 +34,7 @@ section {
 }
 
 .header {
-    background-color: rgba(255, 144, 14, .1);
+    background-color: var(--background);
     height: 100%;
     padding-bottom: 50px;
     width: 100%;
@@ -393,4 +394,22 @@ button:hover {
     height: 30px;
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
+}
+
+
+/* Footer styles */
+
+.footer {
+    width: 100%;
+    background: var(--background);
+    text-align: center;
+    padding: 15px;
+    font-size: var(--text-sm);
+    color: var(--text-light);
+    border-radius: 8px;
+}
+
+footer {
+    padding-top: 130px;
+    padding-bottom: 216px;
 }
