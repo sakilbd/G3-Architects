@@ -14,12 +14,24 @@
     .quicklist-photos {
         display: none;
     }
+    .quick-list-title {
+        text-align: center;
+    }
     .quick-list-text {
         text-align: center;
     }
     .quick-list-button {
         /* background: Red; */
         text-align: center;
+    }
+    .image-section {
+        display: none;
+    }
+    .feature-section {
+        width: 100%;
+    }
+    .feature-title {
+        width: 100%;
     }
     .facts {
         padding-top: 0;
@@ -49,6 +61,10 @@
     .logos>img {
         height: 29px;
     }
+    footer {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
 }
 
 html {
@@ -57,7 +73,7 @@ html {
 }
 
 ::-webkit-scrollbar {
-    width: 0;
+    width: 10px;
     /* Remove scrollbar space */
     background: transparent;
     /* Optional: just make scrollbar invisible */
