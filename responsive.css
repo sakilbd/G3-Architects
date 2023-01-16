@@ -39,8 +39,21 @@
         text-align: center;
     }
     /* feature responsive  */
+    .feature-container {
+        display: grid;
+        gap: 20px;
+    }
     .image-section {
-        display: none;
+        /* width: 300px; */
+        height: 337px;
+        object-fit: fill;
+        /* display: none; */
+    }
+    .feature-button {
+        bottom: 0px;
+        left: 0px;
+        height: 120px;
+        width: 100%;
     }
     .feature-section {
         width: 100%;
@@ -100,11 +113,3 @@ html {
     background: transparent;
     /* Optional: just make scrollbar invisible */
 }
-
-
-/* Optional: show position indicator in red */
-
-
-/* ::-webkit-scrollbar-thumb {
-    background: #FF0000;
-} */
