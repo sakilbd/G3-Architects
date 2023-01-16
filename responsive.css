@@ -1,4 +1,5 @@
 @media only screen and (max-width: 600px) {
+    /* nav responsive */
     nav {
         display: block;
     }
@@ -8,11 +9,24 @@
     .nav-right>ul {
         display: block;
     }
+    /* header responsive */
     .header-section {
         margin-top: 0px;
     }
-    .quicklist-photos {
+    /* quicklist responsive */
+    .quick-list {
+        display: grid;
+    }
+    /* .quicklist-photos {
         display: none;
+    } */
+    .feature-images-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .quicklist-photos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .quick-list-title {
         text-align: center;
@@ -24,6 +38,7 @@
         /* background: Red; */
         text-align: center;
     }
+    /* feature responsive  */
     .image-section {
         display: none;
     }
@@ -33,6 +48,10 @@
     .feature-title {
         width: 100%;
     }
+    /* .feature-button {
+        display: block
+    } */
+    /* facts responsive */
     .facts {
         padding-top: 0;
         display: grid;
@@ -47,6 +66,7 @@
     .text {
         text-align: center;
     }
+    /* clients & sponsor responsive */
     .clients {
         overflow-x: scroll;
         display: flex;
@@ -61,6 +81,7 @@
     .logos>img {
         height: 29px;
     }
+    /* footer responsive  */
     footer {
         padding-top: 20px;
         padding-bottom: 20px;
