@@ -225,6 +225,21 @@ button:hover {
     color: var(--primary);
 }
 
+.quick-list-title {
+    font-size: var(--text-title);
+    font-weight: bold;
+}
+
+.quick-list-text {
+    font-size: var(--text-sm);
+    color: var(--text-light);
+    display: flex;
+    align-items: center;
+    line-height: 26px;
+    flex-direction: column;
+    max-width: 542px;
+}
+
 
 /* feature section style  */
 

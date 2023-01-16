@@ -11,6 +11,16 @@
     .header-section {
         margin-top: 0px;
     }
+    .quicklist-photos {
+        display: none;
+    }
+    .quick-list-text {
+        text-align: center;
+    }
+    .quick-list-button {
+        /* background: Red; */
+        text-align: center;
+    }
     .facts {
         padding-top: 0;
         display: grid;
