@@ -1,0 +1,50 @@
+@media only screen and (max-width: 600px) {
+    .facts {
+        padding-top: 0;
+        display: grid;
+        gap: 1rem;
+    }
+    .facts-text {
+        text-align: center;
+    }
+    .facts-title {
+        text-align: center;
+    }
+    .text {
+        text-align: center;
+    }
+    .clients {
+        overflow-x: scroll;
+        display: flex;
+        gap: 1.5rem;
+    }
+    .logos {
+        overflow-x: scroll;
+        display: flex;
+        gap: 1.5rem;
+    }
+    .clients>img,
+    .logos>img {
+        height: 29px;
+    }
+}
+
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    /* Remove scrollbar space */
+    background: transparent;
+    /* Optional: just make scrollbar invisible */
+}
+
+
+/* Optional: show position indicator in red */
+
+
+/* ::-webkit-scrollbar-thumb {
+    background: #FF0000;
+} */

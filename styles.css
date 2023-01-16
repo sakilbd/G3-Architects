@@ -345,6 +345,7 @@ button:hover {
     font-size: var(--text-sm);
     line-height: var(--line-height);
     color: var(--text-light);
+    max-width: 542px;
 }
 
 .facts {
@@ -403,6 +404,7 @@ button:hover {
 .title {
     font-size: var(--text-title);
     font-weight: bold;
+    text-align: center;
 }
 
 .text {
@@ -410,8 +412,11 @@ button:hover {
     color: var(--text-light);
     display: flex;
     align-items: center;
-    line-height: 13px;
+    line-height: 26px;
     flex-direction: column;
+    max-width: 542px;
+    text-align: center;
+    ;
 }
 
 .logos {
