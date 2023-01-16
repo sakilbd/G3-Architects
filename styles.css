@@ -1,9 +1,10 @@
-    :root {
+:root {
     --text-sm: 16px;
     --text-md: 20px;
     --text-title: 45px;
     --text-light: #838080;
     --line-height: 26px;
+    --primary: #FF900E;
 }
 
 * {
@@ -107,7 +108,7 @@ nav {
 }
 
 .header-sub-texts {
-    color: var( --text-light);
+    color: var(--text-light);
     text-align: center;
     font-size: 16px;
     line-height: 26px;
@@ -255,7 +256,7 @@ button:hover {
 
 .feature-title {
     border-left: 5px solid #FF900E;
-    font-size: 45px;
+    font-size: var( --text-title);
     font-weight: bold;
 }
 
@@ -286,3 +287,61 @@ button:hover {
 .description {
     color: var(--text-light);
     font-weight: var(--text-sm);
+}
+
+
+/* facts styles  */
+
+.facts-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.facts-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.facts-title {
+    font-size: var( --text-title);
+    font-weight: bold;
+}
+
+.facts-text {
+    font-size: var(--text-sm);
+    line-height: var(--line-height);
+    color: var(--text-light);
+}
+
+.facts {
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.section {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    border: 1px solid var(--primary);
+    border-radius: 8px;
+    padding: 15px;
+    width: 241px;
+}
+
+.section-header {
+    font-size: var( --text-title);
+    font-weight: 800;
+    line-height: 35.19px;
+}
+
+.section-text {
+    font-size: var(--text-md);
+    color: var(--text-light);
+    font-weight: bold;
+    line-height: 29.33px;
+}
